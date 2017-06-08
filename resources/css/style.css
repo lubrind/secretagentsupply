@@ -1,0 +1,250 @@
+html{
+  font-size: 18px;
+}
+
+body{
+  font-family: Helvetica;
+}
+
+body,li a{
+  color:white;
+}
+
+.full-width{
+  width:100%;
+}
+
+.tablet-width{
+  width:960px;
+  margin:0 auto;
+}
+
+h2{
+  font-size:1rem;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h1,h2{
+  text-transform: uppercase;
+}
+
+.banner, .feature, ul, .items, .item-height, .store, .information, footer{
+  display:flex;
+}
+
+.banner, .items, .item-height ,footer{
+  align-items:center;
+}
+
+ul,.store,.information{
+  justify-content: space-between;
+}
+
+header .full-width, .items h2,.information h2,footer{
+  background-color: black;
+}
+
+nav.full-width, .store{
+  margin-bottom: 3rem;
+}
+
+
+/*  HEADER  */
+
+.banner{
+  height:1.5rem;
+  padding: .66rem 0;
+}
+
+.banner img{
+  margin:0 1rem 0 0.5rem;
+  height:100%;
+  width:auto;
+}
+
+
+.feature{
+  background-image: url("../images/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:25rem;
+}
+
+.featured-item{
+  background-color: black;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+  width:20rem;
+}
+
+.featured-item h2{
+  margin-bottom: .25rem;
+}
+
+nav.full-width{
+  background-color:firebrick;
+  margin-bottom:3rem;
+}
+
+ul{
+  padding:.75rem 0;
+}
+
+li{
+  list-style-type: none;
+  display:inline;
+}
+
+li a{
+  text-decoration: none;
+}
+
+mobile-screen{
+  display:none;
+}
+
+/* Main Body or the Store */
+
+.items{
+  border: solid 4px black;
+  width:30%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.item-height{
+  height:9rem;
+  padding:2rem 0;
+}
+
+.items img{
+  max-width: 9rem;
+}
+
+.items h2{
+  padding:.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+/* Information Section */
+
+.information{
+  margin-bottom: 4rem;
+}
+
+.location, .hours{
+  width:35%;
+}
+
+.information h2{
+  padding: 1rem 0 1rem 2rem;
+}
+
+.information p{
+  color:black;
+  padding-top: .25rem;
+}
+
+/*Footer*/
+
+footer{
+  height:5rem;
+  text-align: left;
+}
+
+
+@media only screen and (max-width:1024px){
+
+  .tablet-width{
+    width:100%;
+  }
+  /*nav*/
+  ul{
+    justify-content: center;
+  }
+
+  .tablet-width li, .store .items:nth-child(3){
+    display:none;
+  }
+  li.mobile-screen{
+    display:inline;
+  }
+  /*store*/
+  .store{
+    flex-wrap: wrap;
+  }
+
+  .items{
+    width: 47%;
+  }
+}
+
+  /*For Screens less than 470px */
+
+  @media only screen and (max-width:480px){
+
+
+    .items, .location, .hours{
+      width:90%;
+    }
+
+    .store, .information{
+      justify-content: center;
+    }
+
+    /*header*/
+
+    .feature{
+      height:15rem;
+    }
+
+    .featured-item{
+      margin-top: 10rem;
+      padding:1rem 2rem;
+      width: 100%;
+    }
+
+    .featured-item h2{
+      font-size: .77rem;
+    }
+
+    .featured-item h1{
+      font-size: 1rem;
+    }
+
+    /*store*/
+
+    .store .items:nth-child(2){
+      display:none;
+    }
+
+    /*information*/
+    .information{
+      flex-wrap: wrap;
+    }
+
+    .location{
+      margin-bottom: .5rem;
+    }
+
+    /*footer*/
+    footer h2{
+      text-align:center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
